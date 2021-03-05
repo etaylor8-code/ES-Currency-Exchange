@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<title>E.S. Currency Exchange</title>
+<h1>Welcome to the E.S. Currency Exchange App!</h1><br>
+
+ <form method="POST" action="convert.php">
+  <ul>
+   <li>
+    <label for="currency1">Please select currency #1: </label>
+    <select name="currency1" id="currency1">
+      <option value="canada">CAD</option>
+      <option value="us">USD</option>
+      <option value="uk">GBP</option>
+      <option value="europe">EUR</option>
+      <option value="china">CNY</option>
+      <option value="japan">JPY</option>
+    </select>
+    <br><br>
+   </li>
+   <li>
+    <label for="currency2">Please select currency #2: </label>
+    <select name="currency2" id="currency2">
+      <option value="us">USD</option>
+      <option value="canada">CAD</option>
+      <option value="uk">GBP</option>
+      <option value="europe">EUR</option>
+      <option value="china">CNY</option>
+      <option value="japan">JPY</option>
+    </select>
+   </li>
+   <li>
+    <br><p>How much would you like to convert?</p>
+    <input type="number" id="amount" name="amount"><br><br>  
+    <button type="submit">Convert!</button>
+   </li>
+  </ul>
+</form>
+    <script src="scripts/script.js"></script>
+</body>
+</html> 
