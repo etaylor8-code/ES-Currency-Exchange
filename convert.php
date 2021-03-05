@@ -141,23 +141,23 @@
 
 #Canada/US print statement
   if ($currency2 == "canada" || $currency2 == "us") {
-  	$roundedAmount1 = round($convertedAmount,2);
-    echo 'Your converted amount is $', number_format($roundedAmount1, 2);
+  	$roundedAmount = round($convertedAmount,2);
+    echo 'Your converted amount is $', number_format($roundedAmount, 2);
   }
 #China/Japan print statement
   if ($currency2 == "china" || $currency2 == "japan") {
-    	$roundedAmount2 = round($convertedAmount,2);
-    echo 'Your converted amount is ¥', number_format($roundedAmount2, 2);
+    	$roundedAmount = round($convertedAmount,2);
+    echo 'Your converted amount is ¥', number_format($roundedAmount, 2);
   }
 #UK print statement
   if ($currency2 == "uk") {
-    	$roundedAmount3 = round($convertedAmount,2);
-    echo 'Your converted amount is £', number_format($roundedAmount3, 2);
+    	$roundedAmount = round($convertedAmount,2);
+    echo 'Your converted amount is £', number_format($roundedAmount, 2);
   }
 #Europe print statement
   if ($currency2 == "europe") {
-    	$roundedAmount4 = round($convertedAmount,2);
-    echo 'Your converted amount is €', number_format($roundedAmount4, 2);
+    	$roundedAmount = round($convertedAmount,2);
+    echo 'Your converted amount is €', number_format($roundedAmount, 2);
   }
 ?>
 <br><br>
