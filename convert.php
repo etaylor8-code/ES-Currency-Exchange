@@ -141,19 +141,19 @@
 
 #Canada/US print statement
   if ($currency2 == "canada" || $currency2 == "us")
-    echo 'Your converted amount is $', $convertedAmount, '.';
+    echo 'Your converted amount is $', number_format($convertedAmount,3);
 
 #China/Japan print statement
   if ($currency2 == "china" || $currency2 == "japan")
-    echo 'Your converted amount is ¥', $convertedAmount, '.';
+    echo 'Your converted amount is ¥', number_format($convertedAmount,3);
 
 #UK print statement
   if ($currency2 == "uk")
-    echo 'Your converted amount is £', $convertedAmount, '.';
+    echo 'Your converted amount is £', number_format($convertedAmount,3);
 
 #Europe print statement
   if ($currency2 == "europe")
-    echo 'Your converted amount is €', $convertedAmount, '.';
+    echo 'Your converted amount is €', number_format($convertedAmount,3);
    
 ?>
 <br><br>
