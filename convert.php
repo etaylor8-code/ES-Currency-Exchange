@@ -1,3 +1,5 @@
+<title>E.S. Currency Exchange</title>
+<h3>Thank you for using the E.S. Currency Exchange App!</h3><br>
 <?php
 
   $currency1 = htmlspecialchars($_POST['currency1']);
@@ -139,18 +141,20 @@
 
 #Canada/US print statement
   if ($currency2 == "canada" || $currency2 == "us")
-    echo 'Your converted amount is $', $convertedAmount;
+    echo 'Your converted amount is $', $convertedAmount, '.';
 
 #China/Japan print statement
   if ($currency2 == "china" || $currency2 == "japan")
-    echo 'Your converted amount is ¥', $convertedAmount;
+    echo 'Your converted amount is ¥', $convertedAmount, '.';
 
 #UK print statement
   if ($currency2 == "uk")
-    echo 'Your converted amount is £', $convertedAmount;
+    echo 'Your converted amount is £', $convertedAmount, '.';
 
 #Europe print statement
   if ($currency2 == "europe")
-    echo 'Your converted amount is €', $convertedAmount;
-
+    echo 'Your converted amount is €', $convertedAmount, '.';
+   
 ?>
+<br><br>
+<button name="backbutton" onclick="history.go(-1)">Back</button>
